@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+html {
+    height: 100%
+}
+
+    body
+    {
+      font-family: 'Raleway', sans-serif;
+    }
+
+#bgvid {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.topnav input[type=text] {
+  z-index: 2; 
+  float: right;
+  width: 36.3%;
+  padding: 8px;
+  border: none;
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 520px;
+  margin-right: 160px;
+  border-radius: 4px;
+  opacity: 50%;
+}
+
+.logo
+{
+   z-index:1;
+   position: absolute;
+   /*top: 100%;
+   left: 60%;
+   width: 500px;
+   height: 500px;*/
+   margin-top: 450px;
+   margin-left: 600px;
+filter: brightness(0) invert(1);
+}
+
+.icon
+{z-index:1;
+	position: absolute;
+   width: 50%;
+   height: auto;
+   margin-top: 420px;
+   margin-left: 620px;
+	filter: brightness(0) invert(1);
+}
+
+.btn
+{
+	z-index:0;
+	position:absolute;
+	margin-top:10px;
+	margin-left: 87%;
+	background-color:transparent;
+	border-radius:4px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:8px 15px;
+	text-decoration:none;
+	font-family: 'Raleway', sans-serif;
+}
+.btn:hover {
+	background-color: rgba(255, 255, 255, 0.2);;
+	border:2px solid #15ab29;
+}

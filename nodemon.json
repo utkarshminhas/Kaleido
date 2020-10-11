@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGODB_PASS": "kaleidopw",
+        "DB_NAME": "KDB",
+        "JWT_KEY": "secret"
+    }
+}
