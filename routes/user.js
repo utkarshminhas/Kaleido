@@ -47,9 +47,10 @@ router.post('/signup', urlencodedParser, (request, response, next) => {
                         console.log("result after saving  user in KDB");
 
                         console.log(result);
-                        response.status(201).json({
-                            message: 'User Created'
-                        });
+                        response.render('index', { title: 'Kaleido', name: user.name });
+                        // response.status(201).json({
+                        //     message: 'User Created'
+                        // });
                     })
                         .catch(err => {
                             console.log(err);
@@ -101,10 +102,12 @@ router.post('/login', urlencodedParser, (req, res, next) => {
                             expiresIn: "1h"
                         }
                     );
-                    return res.status(200).json({
-                        message: "Auth successful",
-                        token: token
-                    });
+                    return res.render('index', { title: 'Kaleido', name: user[0].name });
+
+                    // res.status(200).json({
+                    //     message: "Auth successful",
+                    //     token: token
+                    // });
                 }
                 res.status(401).json({
                     message: "Auth failed"

@@ -1,24 +1,130 @@
 <video autoplay muted loop id="bgvid">
     <source src="http://localhost:3000/images/river.mp4" type="video/mp4">
 </video>
-<div class="xx">
-    <a href="user/signup" class="btn">Register</a>
-    <br>
-    <br>
-    <a href="user/login" class="btn">Sign In </a>
-</div>
-<div class="topnav">
-    <input type="text" placeholder="Search for free photos and videos">
-</div>
+<header>
+    <nav class="navbar">
 
-<div class="logo">
-    <a href="#"><img src="http://localhost:3000/images/logotext.png" alt="logo"></a>
-</div>
+        <ul class="nav">
+            {{#ifnoteq name ""}}
+            <li><a class="btn">Welcome {{name}} </a></li>
+            {{else}}
+            <li><a href="user/signup" class="btn">Join Free</a></li>
+            <br>
+            <br>
+            <li><a href="user/login" class="btn">Sign In </a></li>
 
-<div class="icon">
-    <img src="http://localhost:3000/images/icon.png" alt="logo">
-</div>
-<br>
-<!--  Curated images for commercial and personal use.
+            {{/ifnoteq}}
+            {{!-- <li><a href="login.html">Login</a></li>
+            <li><a href="login.html">Join free</a></li> --}}
+        </ul>
+    </nav>
+
+    <div class="topnav">
+        <input type="text" placeholder="Search for free photos and videos">
+    </div>
+
+
+    <div class="logox">
+        <a href="#"><img src="/images/logotext.png" alt="logo"></a>
+    </div>
+
+    <div class="icon">
+        <img src="/images/icon.png" alt="logo">
+    </div>
+
+
+    <br>
+    <!--  Curated images for commercial and personal use.
     <br><br><br>
    <img src="https://images.unsplash.com/photo-1596999806074-eed73a11c38f? ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9" style="width:20%;height:20%" alt="1"> -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <div class="gallery_mason">
+        <div class="img_mason">
+            <div class="img_mason_con">
+                <a href="http://localhost:3000/images/landing/1.jpg">
+                    <img alt="Title 1" src="images/landing/1.jpg" class="img_mason_con--img">
+                </a>
+                <div class="img_mason_con--context">
+                    <div class="img_mason_con--text">Octopus</div>
+                </div>
+            </div>
+        </div>
+        <div class="img_mason">
+            <div class="img_mason_con">
+                <a href="http://localhost:3000/images/landing/2.jpg">
+                    <img alt="Title 2" src="images/landing/2.jpg" class="img_mason_con--img">
+                </a>
+                <div class="img_mason_con--context">
+                    <div class="img_mason_con--text">Japan</div>
+                </div>
+            </div>
+        </div>
+        <div class="img_mason">
+            <div class="img_mason_con">
+                <a href="images/landing/3.jpg">
+                    <img alt="Title 3" src="images/landing/3.jpg" class="img_mason_con--img">
+                </a>
+                <div class="img_mason_con--context">
+                    <div class="img_mason_con--text">Street</div>
+                </div>
+            </div>
+        </div>
+        <div class="img_mason">
+            <div class="img_mason_con">
+                <a href="images/landing//4.jpg">
+                    <img alt="Title 4" src="images/landing/4.jpg" class="img_mason_con--img">
+                </a>
+                <div class="img_mason_con--context">
+                    <div class="img_mason_con--text">Temple</div>
+                </div>
+            </div>
+            <div class="img_mason">
+                <div class="img_mason_con">
+                    <a href="images/landing/5.jpg">
+                        <img alt="Title 5" src="images/landing/5.jpg" class="img_mason_con--img">
+                    </a>
+                    <div class="img_mason_con--context">
+                        <div class="img_mason_con--text">Koi</div>
+                    </div>
+                </div>
+                <div class="img_mason">
+                    <div class="img_mason_con">
+                        <a href="images/landing/6.jpg">
+                            <img alt="Title 6" src="images/landing/6.jpg" class="img_mason_con--img">
+                        </a>
+                        <div class="img_mason_con--context">
+                            <div class="img_mason_con--text">Hotel</div>
+                        </div>
+                    </div>
+                    <div class="img_mason">
+                        <div class="img_mason_con">
+                            <a href="images/landing/7.jpg">
+                                <img alt="Title 7" src="images/landing/7.jpg" class="img_mason_con--img">
+                            </a>
+                            <div class="img_mason_con--context">
+                                <div class="img_mason_con--text">Vender</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bgrect"></div>
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+                    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"
+                    integrity="sha256-bIPvSCQ7+G5GbIXDt2B+9AMpCmFtxTVLU+aWAIPzL8I=" crossorigin="anonymous"></script>
+                <script>
+                    $('#gallery').justifiedGallery({
+                        rowHeight: 300,
+
+                        margins: 12
+                    });
+                </script>

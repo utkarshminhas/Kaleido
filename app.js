@@ -9,6 +9,7 @@ var userRouter = require('./routes/user');
 var mongoose = require('mongoose');
 
 var app = express();
+//mongo set up
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
@@ -18,8 +19,22 @@ mongoose.connect('mongodb+srv://Utkarsh_Kaleido:kaleidopw@cluster0.sza84.mongodb
   .then(() => console.log('MongoDB connected...'))
   .catch(err => console.log(err));
 
+
+
 // view engine setup
-app.engine('.hbs', expressHbs({ defaultLayout: 'layout', extname: '.hbs' }));
+const hbs = expressHbs.create(
+  {
+    defaultLayout: 'layout',
+    extname: '.hbs',
+    helpers: {
+      eq: (v1, v2) => v1 === v2,
+      ifnoteq: function (a, b, options) {
+        if (a != b) { return options.fn(this); }
+        return options.inverse(this);
+      }
+    }
+  });
+app.engine('.hbs', hbs.engine);
 app.set('view engine', '.hbs');
 
 app.use(logger('dev'));
