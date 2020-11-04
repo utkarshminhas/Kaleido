@@ -27,7 +27,7 @@ h5,
 h6 {
 	text-transform: none;
 	font-weight: 600;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 }
 
@@ -45,7 +45,7 @@ hr {
 	font-weight: 700;
 	margin: 50px auto;
 	color: #333;
-	font-family: 'Ubuntu', sans-serif;
+	font-family:	 'Ubuntu', sans-serif;
 	
 }
 
@@ -253,7 +253,7 @@ padding-bottom:2rem;
 }
 
 .btn{
-background: #34b3a0;
+background: #0c67c2;
 color:#fff;
 font-size:1.2rem;
 padding: 1rem 2rem;
@@ -289,7 +289,52 @@ text-decoration: none;
 	font-size: 25px;
 }
 
+/******SEARCH BAR******/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #0c67c2;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #0c67c2;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #0c67c2;
+  background: #0c67c2;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, +150%);
+}
 
 
 /* ******* About ******* */
@@ -301,7 +346,7 @@ text-decoration: none;
 
 #about h3 {
 	font-family: 'Roboto', sans-serif;
-	color: #E94B3C;
+	color: #498df3;
 	
 
 }
@@ -643,8 +688,11 @@ height: auto;
 
 #staff .thumbnail-row {
 	margin: auto 60px;
+	/* background-color: #9DBFAF; */
+	/* display: flex;  
+	flex-wrap: wrap; */
+	
 }
-
 #staff h3 {
 	font-family: 'Lato', sans-serif;
 	text-transform: none;
@@ -655,6 +703,7 @@ height: auto;
 #staff img {
 	border-radius: 50%;
 	margin-bottom: 10px;
+	/* display: inline-flex; */
 }
 
 

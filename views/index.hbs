@@ -21,7 +21,7 @@
         <meta name="description" content="Northstreet Restaurant">
         <meta name="author" content="A.K.">
 
-        <title>Restaurant Northstreet</title>
+        <title>Kaledio</title>
 
 
         <!-- Latest compiled and minified CSS -->
@@ -93,10 +93,18 @@
 
 
             <div class="header-content text-md-center">
-                <h1>Welcome Everyone</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus
-                    numquam amet impedit explicabo? Debitis quasi ullam aperiam!</p>
-                <a class="btn">Find Out More</a>
+                <h1>Kaleido</h1>
+                <p>Your platform for finding great, usable imagery to fuel creativity around the world.</p>
+                {{!-- <a class="btn">Find Out More</a> --}}
+                <div class="wrap">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                {{!-- <p>Trending:flowers, wallpapers, fashion, happy,love and nature<p> --}}
             </div>
         </header>
 
@@ -117,11 +125,11 @@
                     <div class="col-sm-5">
 
                         <div class="hov-img">
-                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/warm_welcome.jpg"
-                                alt="Warm welcome" class="hov-img-bottom img-fluid">
+                            <img src="https://miro.medium.com/max/7000/1*l-mjZ0Ym-VzDSrSW6nvfqA.jpeg" alt="Warm welcome"
+                                class="hov-img-bottom img-fluid">
                             <div class="hov-img-top hov-img-slideup">
                                 <div class="hov-img-text">
-                                    <h5>Warm welcome</h5>
+                                    <h5>Photos for everyone</h5>
                                     <p>It had separate tables, a menu, and specialized in soups made with a base of meat
                                         and eggs, which were said to be restaurants or, in English "restoratives".</p>
                                 </div>
@@ -129,11 +137,11 @@
                         </div>
 
                         <div class="hov-img">
-                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/delicious_meals.jpg"
+                            <img src="https://images.unsplash.com/photo-1604079993896-82084928a2e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
                                 alt="Delicious meals" class="hov-img-bottom img-fluid">
                             <div class="hov-img-top hov-img-slideup">
                                 <div class="hov-img-text">
-                                    <h5>Delicious meals</h5>
+                                    <h5>Click something awesome</h5>
                                     <p> In about 1765 a new kind of eating establishment, called a "Bouillon", was
                                         opened on rue des Poulies, near the Louvre, by a man named Boulanger.</p>
                                 </div>
@@ -155,30 +163,26 @@
                     <div class="col-sm-7">
                         <div class="row ">
                             <div class="restaurant-history slideanim text-center">
-                                <h3 class="section-heading">Restaurant Northstreet</h3>
-                                <p class="about-history first">The modern idea of a restaurant – as well as the term
-                                    itself – appeared in Paris in the 18th century. For centuries Paris had taverns
-                                    which served food at large common tables, but they were notoriously crowded, noisy,
-                                    not very clean, and served food of dubious quality. In about 1765 a new kind of
-                                    eating establishment, called a "Bouillon", was opened on rue des Poulies, near the
-                                    Louvre, by a man named Boulanger.<br /> <br>
-                                    It had separate tables, a menu, and specialized in soups made with a base of meat
-                                    and eggs, which were said to be restaurants or, in English "restoratives". Other
-                                    similar bouillons soon opened around Paris.
-                                    In about 1765 a new kind of eating establishment, called a "Bouillon", was opened on
-                                    rue des Poulies, near the Louvre, by a man named Boulanger.
-                                    It had separate tables, a menu, and specialized in soups made with a base of meat
-                                    and eggs, which were said to be restaurants or, in English "restoratives". Other
-                                    similar bouillons soon opened around Paris.
+                                <h3 class="section-heading">Kaledio</h3>
+                                <p class="about-history first">Photography is the art of capturing light with a camera,
+                                    usually via a digital sensor or film, to create an image. With the right camera
+                                    equipment, you can even photograph wavelengths of light invisible to the human eye,
+                                    including UV, infrared, and radio.
+                                    <br>
+                                    <br>
+                                    Browse and discover millions of vectors, photos, PSD files, icons, and free
+                                    presentations templates. Inspiration, creativity, and design with Kaledio
+                                    <br>
+                                    <br>
+                                    Beautiful, free images gifted by the world’s most generous community of
+                                    photographers. Better than any royalty free or stock photos..
                                 </p>
 
                                 <button type="button" class="btn more" id="more" data-toggle="collapse"
-                                    data-target="#demo">More</button>
+                                    data-target="#demo">How we started</button>
                                 <div id="demo" class="collapse">
-                                    <p class="about-history"> Thanks to Boulanger and his imitators, these soups moved
-                                        from the category of remedy into the category of health food and ultimately into
-                                        the category of ordinary food. Their existence was predicated on health, not
-                                        gustatory, requirements.</p>
+                                    <p class="about-history"> How we started? The concept was simple. Kaledio was born
+                                        from the pain we had in finding great, usable imagery.</p>
                                 </div>
                             </div>
                         </div>
@@ -194,25 +198,25 @@
 
                 <div class="row service-round-3 slideanim">
                     <div class="col-sm-4 text-center round">
-                        <div class="service-round b-party">
-                            <i class="fa fa-4x fa fa-birthday-cake sr-icons"></i>
-                        </div>
-                        <h4>Birthday party</h4>
-                        <p>For more information please contact us.</p>
+                        {{!-- <div class="service-round b-party"> --}}
+                        <i class="fa fa-4x fa fa-image sr-icons"></i>
+                        {{!-- </div> --}}
+                        <h4>Awesome Images</h4>
+                        <p>We have a huge repository of beautiful images.</p>
                     </div>
                     <div class="col-sm-4 text-center round">
-                        <div class="service-round wedding">
-                            <i class="fa fa-4x fa fa-heart sr-icons"></i>
-                        </div>
-                        <h4>Wedding</h4>
-                        <p>For more information please contact us</p>
+                        {{!-- <div class="service-round b-dinner"> --}}
+                        <i class="fa fa-4x fa fa-smile-o  sr-icons"></i>
+                        {{!-- </div> --}}
+                        <h4>Quality Images</h4>
+                        <p>HD Images available</p>
                     </div>
                     <div class="col-sm-4 text-center round">
-                        <div class="service-round b-dinner">
-                            <i class="fa fa-4x fa fa-suitcase  sr-icons"></i>
-                        </div>
-                        <h4>Business dinner</h4>
-                        <p>For more information please contact us.</p>
+                        {{!-- <div class="service-round wedding"> --}}
+                        <i class="fa fa-4x fa fa-search sr-icons"></i>
+                        {{!-- </div> --}}
+                        <h4>Search</h4>
+                        <p>Search for your favourite images right here !</p>
                     </div>
                 </div>
                 <a href="#contact" class="btn">Contact us</a>
@@ -257,7 +261,74 @@
                                     <i class="fa fa-instagram fa-3x"></i>
                                 </div>
                             </div>
-                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s3.jpg"
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1518619636083-7402978fca97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
+                                class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1561444575-672a672e23f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                class="img-fluid
+                        " alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1549925861-c14d41750718?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1581814706561-f5bbfa7d984a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
                                 class="img-fluid" alt="">
                         </a>
                     </div>
@@ -294,6 +365,40 @@
                                 class="img-fluid" alt="">
                         </a>
                     </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1527782337660-4c625a30ee42?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+                                class="img-fluid
+                        " alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1604391659919-0cb8c6bb0966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#" class="portfolio-link">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-instagram fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1604383393193-ce637a2f9c17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                class="img-fluid" alt="">
+                        </a>
+                    </div>
                 </div>
                 <div class="row more-img">
 
@@ -313,42 +418,36 @@
         </section>
 
         <section class="bg-staff" id="staff">
-            <div class="container-fluid">
+            <div class="container">
                 <h3>Our staff</h3>
                 <hr class="hr-h3s">
                 <div class="row text-center slideanim thumbnail-row">
+                    {{!-- <div class="centerwrapper"> --}}
                     <div class="col-sm-3">
                         <div class="staff">
-                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952566/new/manager.jpg"
-                                class="" alt="chef-img" style="width:170px; height: 170px">
-                            <h5 class="">John Johnson</h5>
-                            <h6>Manager</h6>
+                            <h5 class=""></h5>
+                            <h6></h6>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="staff">
-                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952565/new/chef1.jpg"
+                            <img src="https://cdn.imgbin.com/0/16/3/imgbin-computer-icons-user-account-graphics-account-icon-nMRXmLKhhX3TmNyzzfMLmCG48.jpg"
                                 class="" alt="chef-img" style="width:170px; height: 170px">
-                            <h5 class="">Anna Schmidt</h5>
-                            <h6>Chef</h6>
+                            <h5 class="">Utkarsh Minhas</h5>
+                            <h6>Student</h6>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="staff">
-                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952566/new/chef3.jpg"
+                            <img src="https://cdn.imgbin.com/0/16/3/imgbin-computer-icons-user-account-graphics-account-icon-nMRXmLKhhX3TmNyzzfMLmCG48.jpg"
                                 class="" alt="chef-img" style="width:170px; height: 170px">
-                            <h5 class="">Ivan Gonzales</h5>
-                            <h6>Chef</h6>
+                            <h5 class="">Shreyash Maini</h5>
+                            <h6>Student</h6>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="staff">
-                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952566/new/chef2.jpg"
-                                class="" alt="chef-img" style="width:170px; height: 170px">
-                            <h5 class="">Joseph Martinez</h5>
-                            <h6>Chef</h6>
-                        </div>
-                    </div>
+                    <div class="col-sm-3" />
+
+                    {{!-- </div> --}}
                 </div>
             </div>
         </section>
@@ -369,19 +468,17 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <h4>The atmosphere in restaurant is friendly, and the
-                                    dishes are delicious.</h4>
+                                <h4>Great Website ! Beautiful Pictures</h4>
                                 <h5>Mark Gross</h5>
                             </div>
 
                             <div class="carousel-item">
-                                <h4>Delicious meals, warm welcome, excellent service.</h4>
+                                <h4>Amazing Images of all categoriies.</h4>
                                 <h5>Nina Hansen</h5>
                             </div>
 
                             <div class="carousel-item">
-                                <h4>Definitely my favourite restaurant, friendly, clean,
-                                    delicious meals.</h4>
+                                <h4>Definitely my favourite website, friendly, clean UI</h4>
                                 <h5>Maria Fernandez</h5>
                             </div>
                         </div>
@@ -407,19 +504,19 @@
                             <address class="contact">
                                 <span class="span-contact">Call:</span>
                                 <br>
-                                +091 1234 5678
+                                +91 9944829932
                                 <br>
                                 <span class="span-contact">Email:</span>
                                 <br>
-                                northstreet@gmail.com
+                                utkarsh0304@gmail.com
                                 <br>
                                 <span class="span-contact">Visit:</span>
                                 <br>
-                                22, Northstreet Road
+                                SRMIST, Potheri
                                 <br>
-                                Melbourne, Victoria
+                                Kattankulathur, Chennai
                                 <br>
-                                Australia
+                                India
                             </address>
                         </div>
                     </div>
@@ -463,12 +560,11 @@
             <div class="container-fluid">
                 <div class="row footer-align">
                     <div class="col-md-4 col-sm-4">
-                        <h5>Northstreet</h5>
+                        <h5>Kaledio</h5>
                         <hr class="hr-foot">
                         <div class="footer-items">
-                            <p class="footer">
-                                The EU-27 has an estimated 1.6m businesses involved in 'accommodation and food
-                                services', more than 75% of which are small and medium enterprises.
+                            <p class="footer" style="text-align:center">
+                                Your platform for finding great, usable imagery to fuel creativity around the world.
                             </p>
                             <ul class="social-networks">
                                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -481,18 +577,18 @@
                         <hr class="hr-foot">
                         <div class="footer-items">
                             <address>
-                                22, Northstreet Road
+                                SRMIST, Potheri
                                 <br>
-                                Melbourne, Victoria
+                                Kattankulathur, Chennai
                                 <br>
-                                Australia
+                                India
                                 <br>
-                                <i class="fa fa-phone address"></i> +091 1234 5678
+                                <i class="fa fa-phone address"></i> +91 9944829932
                                 <br>
-                                <i class="fa fa-fax address"></i> +876 5432 1234
+                                <i class="fa fa-fax address"></i> +876 9968339229
                                 <br>
                                 <i class="fa fa-envelope address"></i> <a
-                                    href="mailto:northstreet@gmail.com">northstreet@gmail.com</a>
+                                    href="mailto:utkarsh0304@gmail.com">utkarsh0304@gmail.com</a>
                             </address>
                         </div>
                     </div>
@@ -516,7 +612,7 @@
         </footer>
 
         <div class="footer-copyright">
-            <p>&copy 2020 Copyright by <a href="http://www.antenagames.com" target="blank"> AntenaGames</a></p>
+            <p>Made with ❤️ By Utkarsh and Shreyash </p>
         </div>
 
 
